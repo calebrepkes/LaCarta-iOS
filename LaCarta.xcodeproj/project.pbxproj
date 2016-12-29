@@ -14,6 +14,13 @@
 		3CAB8E851E131C8300580F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB8E831E131C8300580F7A /* LaunchScreen.storyboard */; };
 		3CAB8E901E131C8400580F7A /* LaCartaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8E8F1E131C8400580F7A /* LaCartaTests.swift */; };
 		3CAB8E9B1E131C8400580F7A /* LaCartaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8E9A1E131C8400580F7A /* LaCartaUITests.swift */; };
+		3CAB8EB11E131DB100580F7A /* LaCartaiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CAB8EAF1E131DB100580F7A /* LaCartaiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CAB8EB41E131DB100580F7A /* LaCartaiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB8EAD1E131DB100580F7A /* LaCartaiOS.framework */; };
+		3CAB8EB51E131DB100580F7A /* LaCartaiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB8EAD1E131DB100580F7A /* LaCartaiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CAB8EBB1E131E2A00580F7A /* SuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EBA1E131E2A00580F7A /* SuperClass.swift */; };
+		3CAB8EBC1E131E2A00580F7A /* SuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EBA1E131E2A00580F7A /* SuperClass.swift */; };
+		3CAB8EBE1E13223800580F7A /* WineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EBD1E13223800580F7A /* WineList.swift */; };
+		3CAB8EC11E13F9DC00580F7A /* session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EC01E13F9DC00580F7A /* session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,28 @@
 			remoteGlobalIDString = 3CAB8E761E131C8300580F7A;
 			remoteInfo = LaCarta;
 		};
+		3CAB8EB21E131DB100580F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CAB8E6F1E131C8300580F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CAB8EAC1E131DB100580F7A;
+			remoteInfo = LaCartaiOS;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CAB8EB91E131DB100580F7A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3CAB8EB51E131DB100580F7A /* LaCartaiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3CAB8E771E131C8300580F7A /* LaCarta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaCarta.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +75,12 @@
 		3CAB8E961E131C8400580F7A /* LaCartaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaCartaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAB8E9A1E131C8400580F7A /* LaCartaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaCartaUITests.swift; sourceTree = "<group>"; };
 		3CAB8E9C1E131C8400580F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAB8EAD1E131DB100580F7A /* LaCartaiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaCartaiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CAB8EAF1E131DB100580F7A /* LaCartaiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaCartaiOS.h; sourceTree = "<group>"; };
+		3CAB8EB01E131DB100580F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAB8EBA1E131E2A00580F7A /* SuperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperClass.swift; sourceTree = "<group>"; };
+		3CAB8EBD1E13223800580F7A /* WineList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineList.swift; sourceTree = "<group>"; };
+		3CAB8EC01E13F9DC00580F7A /* session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CAB8EB41E131DB100580F7A /* LaCartaiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,15 +106,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CAB8EA91E131DB100580F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3CAB8E6E1E131C8300580F7A = {
 			isa = PBXGroup;
 			children = (
+				3CAB8EBA1E131E2A00580F7A /* SuperClass.swift */,
 				3CAB8E791E131C8300580F7A /* LaCarta */,
 				3CAB8E8E1E131C8400580F7A /* LaCartaTests */,
 				3CAB8E991E131C8400580F7A /* LaCartaUITests */,
+				3CAB8EAE1E131DB100580F7A /* LaCartaiOS */,
 				3CAB8E781E131C8300580F7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +134,7 @@
 				3CAB8E771E131C8300580F7A /* LaCarta.app */,
 				3CAB8E8B1E131C8400580F7A /* LaCartaTests.xctest */,
 				3CAB8E961E131C8400580F7A /* LaCartaUITests.xctest */,
+				3CAB8EAD1E131DB100580F7A /* LaCartaiOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +148,8 @@
 				3CAB8E811E131C8300580F7A /* Assets.xcassets */,
 				3CAB8E831E131C8300580F7A /* LaunchScreen.storyboard */,
 				3CAB8E861E131C8300580F7A /* Info.plist */,
+				3CAB8EBD1E13223800580F7A /* WineList.swift */,
+				3CAB8EC01E13F9DC00580F7A /* session.swift */,
 			);
 			path = LaCarta;
 			sourceTree = "<group>";
@@ -125,7 +172,27 @@
 			path = LaCartaUITests;
 			sourceTree = "<group>";
 		};
+		3CAB8EAE1E131DB100580F7A /* LaCartaiOS */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB8EAF1E131DB100580F7A /* LaCartaiOS.h */,
+				3CAB8EB01E131DB100580F7A /* Info.plist */,
+			);
+			path = LaCartaiOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3CAB8EAA1E131DB100580F7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CAB8EB11E131DB100580F7A /* LaCartaiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3CAB8E761E131C8300580F7A /* LaCarta */ = {
@@ -135,10 +202,12 @@
 				3CAB8E731E131C8300580F7A /* Sources */,
 				3CAB8E741E131C8300580F7A /* Frameworks */,
 				3CAB8E751E131C8300580F7A /* Resources */,
+				3CAB8EB91E131DB100580F7A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3CAB8EB31E131DB100580F7A /* PBXTargetDependency */,
 			);
 			name = LaCarta;
 			productName = LaCarta;
@@ -181,6 +250,24 @@
 			productReference = 3CAB8E961E131C8400580F7A /* LaCartaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3CAB8EAC1E131DB100580F7A /* LaCartaiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CAB8EB61E131DB100580F7A /* Build configuration list for PBXNativeTarget "LaCartaiOS" */;
+			buildPhases = (
+				3CAB8EA81E131DB100580F7A /* Sources */,
+				3CAB8EA91E131DB100580F7A /* Frameworks */,
+				3CAB8EAA1E131DB100580F7A /* Headers */,
+				3CAB8EAB1E131DB100580F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaCartaiOS;
+			productName = LaCartaiOS;
+			productReference = 3CAB8EAD1E131DB100580F7A /* LaCartaiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +295,12 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3CAB8E761E131C8300580F7A;
 					};
+					3CAB8EAC1E131DB100580F7A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7YX7QQ8UV8;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 3CAB8E721E131C8300580F7A /* Build configuration list for PBXProject "LaCarta" */;
@@ -226,6 +319,7 @@
 				3CAB8E761E131C8300580F7A /* LaCarta */,
 				3CAB8E8A1E131C8400580F7A /* LaCartaTests */,
 				3CAB8E951E131C8400580F7A /* LaCartaUITests */,
+				3CAB8EAC1E131DB100580F7A /* LaCartaiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +349,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CAB8EAB1E131DB100580F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,8 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CAB8EBE1E13223800580F7A /* WineList.swift in Sources */,
 				3CAB8E7D1E131C8300580F7A /* ViewController.swift in Sources */,
+				3CAB8EC11E13F9DC00580F7A /* session.swift in Sources */,
 				3CAB8E7B1E131C8300580F7A /* AppDelegate.swift in Sources */,
+				3CAB8EBB1E131E2A00580F7A /* SuperClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +387,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CAB8EA81E131DB100580F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CAB8EBC1E131E2A00580F7A /* SuperClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = 3CAB8E761E131C8300580F7A /* LaCarta */;
 			targetProxy = 3CAB8E971E131C8400580F7A /* PBXContainerItemProxy */;
+		};
+		3CAB8EB31E131DB100580F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CAB8EAC1E131DB100580F7A /* LaCartaiOS */;
+			targetProxy = 3CAB8EB21E131DB100580F7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,6 +531,7 @@
 		3CAB8EA01E131C8400580F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7YX7QQ8UV8;
 				INFOPLIST_FILE = LaCarta/Info.plist;
@@ -427,6 +545,7 @@
 		3CAB8EA11E131C8400580F7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7YX7QQ8UV8;
 				INFOPLIST_FILE = LaCarta/Info.plist;
@@ -495,6 +614,53 @@
 			};
 			name = Release;
 		};
+		3CAB8EB71E131DB100580F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7YX7QQ8UV8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LaCartaiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDR.LaCartaiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CAB8EB81E131DB100580F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7YX7QQ8UV8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LaCartaiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDR.LaCartaiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,6 +680,7 @@
 				3CAB8EA11E131C8400580F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CAB8EA21E131C8400580F7A /* Build configuration list for PBXNativeTarget "LaCartaTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +689,7 @@
 				3CAB8EA41E131C8400580F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CAB8EA51E131C8400580F7A /* Build configuration list for PBXNativeTarget "LaCartaUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +698,16 @@
 				3CAB8EA71E131C8400580F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CAB8EB61E131DB100580F7A /* Build configuration list for PBXNativeTarget "LaCartaiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CAB8EB71E131DB100580F7A /* Debug */,
+				3CAB8EB81E131DB100580F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

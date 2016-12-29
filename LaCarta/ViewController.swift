@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Foundation
 
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -82,7 +81,7 @@ func loginUser(username2: String, password2: String) -> (consoleLogging: String,
 	request.allHTTPHeaderFields = headers
 	request.httpBody = postData as Data
 	
-	var consoleMessage: (Int, String)
+	var consoleMessage = http200Status
 	
 	let session = URLSession.shared
 	let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in

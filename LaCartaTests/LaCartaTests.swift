@@ -11,26 +11,26 @@ import XCTest
 
 class LaCartaTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+	//MARK: Wine Class Tests
+	
+	// Confirm that the Wine initializer returns a Wine object when passed valid parameters
+	func testWineInitializationSucceeds() {
+		// Dumb name
+		let fireWine = Wine.init(wineName: "Fire", photo: nil)
+		XCTAssertNotNil(fireWine)
+
+		let waterWine = Wine.init(wineName: "Water", photo: nil)
+		XCTAssertNotNil(waterWine)
+		
+	}
+	
+	// Confirm that the Wine initializer returns nil when passed invalid parameters
+	func testWineInitializationFails() {
+		// Empty name
+		let emptyWineName = Wine.init(wineName: "", photo: nil)
+		XCTAssertNil(emptyWineName)
+		
+	}
+	
     
 }

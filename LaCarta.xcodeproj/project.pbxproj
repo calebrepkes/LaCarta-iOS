@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3AD43A1E15B69100B3ED01 /* WineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3AD4391E15B69100B3ED01 /* WineTableViewCell.swift */; };
+		3C3AD43C1E15BD3300B3ED01 /* WinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3AD43B1E15BD3300B3ED01 /* WinesTableViewController.swift */; };
 		3CAB8E7B1E131C8300580F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8E7A1E131C8300580F7A /* AppDelegate.swift */; };
 		3CAB8E7D1E131C8300580F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8E7C1E131C8300580F7A /* ViewController.swift */; };
 		3CAB8E801E131C8300580F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB8E7E1E131C8300580F7A /* Main.storyboard */; };
@@ -19,7 +21,7 @@
 		3CAB8EB51E131DB100580F7A /* LaCartaiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB8EAD1E131DB100580F7A /* LaCartaiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3CAB8EBB1E131E2A00580F7A /* SuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EBA1E131E2A00580F7A /* SuperClass.swift */; };
 		3CAB8EBC1E131E2A00580F7A /* SuperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EBA1E131E2A00580F7A /* SuperClass.swift */; };
-		3CAB8EBE1E13223800580F7A /* WineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EBD1E13223800580F7A /* WineList.swift */; };
+		3CAB8EBE1E13223800580F7A /* Wines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EBD1E13223800580F7A /* Wines.swift */; };
 		3CAB8EC11E13F9DC00580F7A /* session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8EC01E13F9DC00580F7A /* session.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C3AD4391E15B69100B3ED01 /* WineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineTableViewCell.swift; sourceTree = "<group>"; };
+		3C3AD43B1E15BD3300B3ED01 /* WinesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinesTableViewController.swift; sourceTree = "<group>"; };
 		3CAB8E771E131C8300580F7A /* LaCarta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaCarta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAB8E7A1E131C8300580F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CAB8E7C1E131C8300580F7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +83,7 @@
 		3CAB8EAF1E131DB100580F7A /* LaCartaiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaCartaiOS.h; sourceTree = "<group>"; };
 		3CAB8EB01E131DB100580F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CAB8EBA1E131E2A00580F7A /* SuperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperClass.swift; sourceTree = "<group>"; };
-		3CAB8EBD1E13223800580F7A /* WineList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineList.swift; sourceTree = "<group>"; };
+		3CAB8EBD1E13223800580F7A /* Wines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wines.swift; sourceTree = "<group>"; };
 		3CAB8EC01E13F9DC00580F7A /* session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +152,10 @@
 				3CAB8E811E131C8300580F7A /* Assets.xcassets */,
 				3CAB8E831E131C8300580F7A /* LaunchScreen.storyboard */,
 				3CAB8E861E131C8300580F7A /* Info.plist */,
-				3CAB8EBD1E13223800580F7A /* WineList.swift */,
+				3CAB8EBD1E13223800580F7A /* Wines.swift */,
 				3CAB8EC01E13F9DC00580F7A /* session.swift */,
+				3C3AD4391E15B69100B3ED01 /* WineTableViewCell.swift */,
+				3C3AD43B1E15BD3300B3ED01 /* WinesTableViewController.swift */,
 			);
 			path = LaCarta;
 			sourceTree = "<group>";
@@ -363,10 +369,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CAB8EBE1E13223800580F7A /* WineList.swift in Sources */,
+				3CAB8EBE1E13223800580F7A /* Wines.swift in Sources */,
 				3CAB8E7D1E131C8300580F7A /* ViewController.swift in Sources */,
 				3CAB8EC11E13F9DC00580F7A /* session.swift in Sources */,
 				3CAB8E7B1E131C8300580F7A /* AppDelegate.swift in Sources */,
+				3C3AD43C1E15BD3300B3ED01 /* WinesTableViewController.swift in Sources */,
+				3C3AD43A1E15B69100B3ED01 /* WineTableViewCell.swift in Sources */,
 				3CAB8EBB1E131E2A00580F7A /* SuperClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

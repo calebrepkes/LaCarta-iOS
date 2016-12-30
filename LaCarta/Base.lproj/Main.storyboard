@@ -13,7 +13,7 @@
         <!--LaCarta Login-->
         <scene sceneID="cKM-sJ-xLs">
             <objects>
-                <viewController title="LaCarta Login" id="aUx-dy-Zws" customClass="ViewController" customModule="LaCarta" sceneMemberID="viewController">
+                <viewController title="LaCarta Login" id="aUx-dy-Zws" customClass="LoginViewController" customModule="LaCarta" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WTD-OD-cHQ"/>
                         <viewControllerLayoutGuide type="bottom" id="8pY-oe-aWT"/>
@@ -123,6 +123,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUU-FP-IMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="792.79999999999995" y="122.78860569715144"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="EhQ-Io-Vbq">
+            <objects>
+                <viewController title="Details" id="q1X-SX-NBy" customClass="DetailsViewController" customModule="LaCarta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4cF-eN-Y5U"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bcq-bk-9PV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jQw-Nt-BeT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yys-Ai-FrV">
+                                <rect key="frame" x="16" y="72" width="343" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5X-Ln-Z1m">
+                                <rect key="frame" x="16" y="408" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeN-fw-CdZ">
+                                <rect key="frame" x="16" y="445" width="343" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="Description" destination="PeN-fw-CdZ" id="qel-J4-Ouz"/>
+                        <outlet property="Photo" destination="Yys-Ai-FrV" id="yFR-6E-S7W"/>
+                        <outlet property="Winename" destination="R5X-Ln-Z1m" id="Dyx-th-ZzK"/>
+                        <outlet property="description" destination="PeN-fw-CdZ" id="3LX-i4-MhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDf-Rh-ncv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448.8" y="122.78860569715144"/>
         </scene>
     </scenes>
     <resources>

@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		3C3AD43A1E15B69100B3ED01 /* WineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3AD4391E15B69100B3ED01 /* WineTableViewCell.swift */; };
 		3C3AD43C1E15BD3300B3ED01 /* WinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3AD43B1E15BD3300B3ED01 /* WinesTableViewController.swift */; };
+		3C3AD43E1E169BC500B3ED01 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3AD43D1E169BC500B3ED01 /* DetailsViewController.swift */; };
+		3CA4B3C41E16B37B00872031 /* HttpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4B3C31E16B37B00872031 /* HttpStatus.swift */; };
+		3CA4B3C61E16B7CA00872031 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4B3C51E16B7CA00872031 /* Credentials.swift */; };
 		3CAB8E7B1E131C8300580F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8E7A1E131C8300580F7A /* AppDelegate.swift */; };
-		3CAB8E7D1E131C8300580F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8E7C1E131C8300580F7A /* ViewController.swift */; };
+		3CAB8E7D1E131C8300580F7A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB8E7C1E131C8300580F7A /* LoginViewController.swift */; };
 		3CAB8E801E131C8300580F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB8E7E1E131C8300580F7A /* Main.storyboard */; };
 		3CAB8E821E131C8300580F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB8E811E131C8300580F7A /* Assets.xcassets */; };
 		3CAB8E851E131C8300580F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB8E831E131C8300580F7A /* LaunchScreen.storyboard */; };
@@ -66,9 +69,12 @@
 /* Begin PBXFileReference section */
 		3C3AD4391E15B69100B3ED01 /* WineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineTableViewCell.swift; sourceTree = "<group>"; };
 		3C3AD43B1E15BD3300B3ED01 /* WinesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinesTableViewController.swift; sourceTree = "<group>"; };
+		3C3AD43D1E169BC500B3ED01 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3CA4B3C31E16B37B00872031 /* HttpStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpStatus.swift; sourceTree = "<group>"; };
+		3CA4B3C51E16B7CA00872031 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		3CAB8E771E131C8300580F7A /* LaCarta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaCarta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAB8E7A1E131C8300580F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CAB8E7C1E131C8300580F7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CAB8E7C1E131C8300580F7A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3CAB8E7F1E131C8300580F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CAB8E811E131C8300580F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CAB8E841E131C8300580F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -147,15 +153,18 @@
 			isa = PBXGroup;
 			children = (
 				3CAB8E7A1E131C8300580F7A /* AppDelegate.swift */,
-				3CAB8E7C1E131C8300580F7A /* ViewController.swift */,
+				3CAB8E7C1E131C8300580F7A /* LoginViewController.swift */,
+				3C3AD43D1E169BC500B3ED01 /* DetailsViewController.swift */,
+				3C3AD4391E15B69100B3ED01 /* WineTableViewCell.swift */,
+				3C3AD43B1E15BD3300B3ED01 /* WinesTableViewController.swift */,
 				3CAB8E7E1E131C8300580F7A /* Main.storyboard */,
 				3CAB8E811E131C8300580F7A /* Assets.xcassets */,
 				3CAB8E831E131C8300580F7A /* LaunchScreen.storyboard */,
 				3CAB8E861E131C8300580F7A /* Info.plist */,
 				3CAB8EBD1E13223800580F7A /* Wines.swift */,
 				3CAB8EC01E13F9DC00580F7A /* session.swift */,
-				3C3AD4391E15B69100B3ED01 /* WineTableViewCell.swift */,
-				3C3AD43B1E15BD3300B3ED01 /* WinesTableViewController.swift */,
+				3CA4B3C31E16B37B00872031 /* HttpStatus.swift */,
+				3CA4B3C51E16B7CA00872031 /* Credentials.swift */,
 			);
 			path = LaCarta;
 			sourceTree = "<group>";
@@ -370,12 +379,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CAB8EBE1E13223800580F7A /* Wines.swift in Sources */,
-				3CAB8E7D1E131C8300580F7A /* ViewController.swift in Sources */,
+				3CAB8E7D1E131C8300580F7A /* LoginViewController.swift in Sources */,
+				3CA4B3C61E16B7CA00872031 /* Credentials.swift in Sources */,
 				3CAB8EC11E13F9DC00580F7A /* session.swift in Sources */,
+				3C3AD43E1E169BC500B3ED01 /* DetailsViewController.swift in Sources */,
 				3CAB8E7B1E131C8300580F7A /* AppDelegate.swift in Sources */,
 				3C3AD43C1E15BD3300B3ED01 /* WinesTableViewController.swift in Sources */,
 				3C3AD43A1E15B69100B3ED01 /* WineTableViewCell.swift in Sources */,
 				3CAB8EBB1E131E2A00580F7A /* SuperClass.swift in Sources */,
+				3CA4B3C41E16B37B00872031 /* HttpStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
